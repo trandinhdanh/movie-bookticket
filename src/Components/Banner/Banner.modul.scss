@@ -1,0 +1,39 @@
+.slick-dots {
+    position: absolute;
+    top: 92%;
+}
+.slick-dots li button {
+    border-radius: 50%;
+    background-color: #666 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.slick-dots li.slick-active button {
+    border-radius: 50%;
+    background-color:transparent !important;
+    margin-top: 5px;
+  
+}
+.slick-dots li button:before {
+    color: transparent !important;
+}
+.slick-dots li.slick-active button:before {
+    background-color: rgb(230, 0, 0) !important;
+    border-radius: 50%;
+}
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: 550px !important;
+
+    > div {
+        height: 100%;
+        > div{
+            height: 100%;
+        }
+    }
+}

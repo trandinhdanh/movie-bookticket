@@ -1,0 +1,49 @@
+.movie-item{
+    position: relative;
+    transition: all .5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:hover .item-content{
+        display: block;
+        height: 50%;
+    }
+    & .img-movie{
+        width: 100%;
+        // position: absolute;
+    }
+    & .movie-play{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 0;
+        border-radius: 50%;
+        transition: all .5s;
+    }
+    & .item-content{
+        // display: none;
+        transition: all .5s;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        
+        .item-title{
+            color: #fff;
+        }
+        .item-btn{
+            display: none;
+        }
+    }
+    &:hover .item-btn{
+        display: block;
+    }
+    &:hover .movie-play{
+        font-size: 70px;
+        padding: 15px;
+    }
+}
